@@ -1,1 +1,20 @@
 <h1>Add phone</h1>
+
+<form action="/add" method="POST">
+    <div class="input-field">
+        <input id="title" type="text" name="title" class="validate" required>
+        <label for="title">Model name</label>
+        <span class="helper-text" data-error="enter title"></span>
+    </div>
+    <div class="input-field">
+        <input id="price" type="number" name="price" class="validate" required min="1">
+        <label for="price">Price</label>
+        <span class="helper-text" data-error="enter price"></span>
+    </div>
+    <div class="input-field">
+        <input id="img" type="text" class="validate" name="img" required>
+        <label for="img">Img</label>
+        <span class="helper-text" data-error="enter url img"></span>
+    </div>
+    <button class="btn btn-primary">ADD</button>
+</form>

@@ -1,6 +1,7 @@
 const uuid = require('uuid')
 const fs = require('fs')
 const path = require('path')
+const {raw} = require('express');
 
 
 class Model {
@@ -37,8 +38,6 @@ class Model {
                     }
                 })
         })
-
-
     }
 
     static getAll() {
@@ -54,6 +53,11 @@ class Model {
                 }
             )
         })
+    }
+
+    static async getById(id) {
+        const models = await Model.getAll()
+        return models.find(c => c.id === id)
     }
 }
 

@@ -1,3 +1,28 @@
 .nav-wrapper {
+    background-color: #4242bb;
     padding: 0 2rem;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.model h1 {
+    margin-bottom: 2rem;
+}
+
+.model img {
+    max-width: 600px;
+    height: auto;
+}
+
+.model .price.big {
+    font-size: 2.5rem;
 }
